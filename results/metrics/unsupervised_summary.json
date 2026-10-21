@@ -1,0 +1,83 @@
+{
+  "pca_unscaled_var_pc1_pc2": [
+    0.748,
+    0.15
+  ],
+  "pca_unscaled_pc1_top_loadings": {
+    "chol": 0.998,
+    "trtbps": 0.048,
+    "age": 0.039
+  },
+  "pca_scaled_var_pc1_pc2": [
+    0.264,
+    0.135
+  ],
+  "kmeans_ari_by_pcs_unscaled": {
+    "1": 0.015,
+    "2": 0.021,
+    "3": 0.021,
+    "4": 0.021,
+    "5": 0.021,
+    "6": 0.021,
+    "7": 0.021,
+    "8": 0.021,
+    "9": 0.021,
+    "10": 0.021
+  },
+  "kmeans_ari_by_pcs_scaled": {
+    "1": 0.301,
+    "2": 0.294,
+    "3": 0.301,
+    "4": 0.301,
+    "5": 0.301,
+    "6": 0.301,
+    "7": 0.301,
+    "8": 0.301,
+    "9": 0.301,
+    "10": 0.301
+  },
+  "kmeans_ari_all_features_scaled": 0.301,
+  "best_n_pcs_scaled": 1,
+  "dbscan_unscaled": {
+    "ari": 0.046,
+    "eps": 19.0
+  },
+  "dbscan_scaled": {
+    "ari": 0.149,
+    "eps": 2.1,
+    "n_clusters": 3,
+    "noise_points": 140
+  },
+  "ward_ari_scaled": 0.294,
+  "silhouette_by_k": {
+    "2": 0.172,
+    "3": 0.123,
+    "4": 0.13,
+    "5": 0.123,
+    "6": 0.108
+  },
+  "cluster_profiles": {
+    "Cluster A": {
+      "patients": 142,
+      "high_risk_pct": 25.4,
+      "mean_age": 59.9,
+      "male_pct": 71.8,
+      "mean_max_hr": 134.3,
+      "exercise_angina_pct": 52.8,
+      "mean_oldpeak": 1.7,
+      "mean_ca": 1.2,
+      "reversible_defect_pct": 56.3
+    },
+    "Cluster B": {
+      "patients": 161,
+      "high_risk_pct": 80.1,
+      "mean_age": 49.5,
+      "male_pct": 65.2,
+      "mean_max_hr": 163.2,
+      "exercise_angina_pct": 14.9,
+      "mean_oldpeak": 0.5,
+      "mean_ca": 0.3,
+      "reversible_defect_pct": 23.0
+    }
+  }
+}

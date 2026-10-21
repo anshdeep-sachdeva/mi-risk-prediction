@@ -1,0 +1,4 @@
+method,paper,ours_unscaled,ours_scaled
+K-Means,0.02,0.021,0.301
+DBSCAN,0.06,0.046,0.149
+Hierarchical (Ward),,,0.294

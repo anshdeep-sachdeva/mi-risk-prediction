@@ -1,0 +1,51 @@
+{
+  "patients": 303,
+  "features": 13,
+  "missing_values": 0,
+  "high_risk": 165,
+  "high_risk_pct": 54.5,
+  "female": 96,
+  "male": 207,
+  "high_risk_pct_by_group": {
+    "sex": {
+      "Male": 44.9,
+      "Female": 75.0
+    },
+    "cp": {
+      "Non-Angina": 27.3,
+      "Asymptomatic": 69.6,
+      "Atypical Angina": 79.3,
+      "Typical Angina": 82.0
+    },
+    "exng": {
+      "Yes": 23.2,
+      "No": 69.6
+    },
+    "ca": {
+      "2": 20.5,
+      "3": 25.0,
+      "1": 32.3,
+      "0": 74.3
+    },
+    "thall": {
+      "Reversible defect": 23.9,
+      "Fixed defect": 31.6,
+      "Normal": 78.4
+    },
+    "slope": {
+      "Up Sloping": 35.4,
+      "Down Sloping": 57.1,
+      "Flat": 73.2
+    }
+  },
+  "top_correlations": {
+    "thall_2": 0.534,
+    "cp_Non-Angina": -0.516,
+    "thall_3": -0.486,
+    "exng": -0.437,
+    "oldpeak": -0.431,
+    "ca": -0.425,
+    "thalachh": 0.422,
+    "slope_Up Sloping": -0.372
+  }
+}

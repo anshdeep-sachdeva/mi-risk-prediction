@@ -1,0 +1,4 @@
+cluster,patients,mean_age,male_pct,prior_MI_pct,prior_HF_pct,diabetes_pct,shock_pct,mean_ICU_systolic_BP,death_rate_pct,heart_failure_pct
+1,1141,60.5,65.6,33.5,8.4,12.7,0.4,138.0,12.2,23.4
+2,454,63.7,58.8,48.0,12.6,15.0,7.6,129.0,20.9,18.9
+3,105,68.4,47.6,34.3,23.8,15.4,6.7,128.0,35.2,39.0

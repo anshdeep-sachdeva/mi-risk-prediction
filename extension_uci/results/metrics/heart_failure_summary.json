@@ -1,0 +1,211 @@
+{
+  "target": "ZSN",
+  "task": "heart_failure",
+  "n_features": 100,
+  "n_train": 1360,
+  "n_test": 340,
+  "positive_rate_pct": 23.2,
+  "majority_baseline_accuracy": 0.768,
+  "best_model": "Random Forest",
+  "best_params": {
+    "max_features": 0.3,
+    "min_samples_leaf": 3
+  },
+  "threshold_default": 0.5,
+  "threshold_high_sensitivity": 0.2347,
+  "test_metrics_default": {
+    "roc_auc": 0.72,
+    "pr_auc": 0.486,
+    "recall": 0.266,
+    "precision": 0.724,
+    "specificity": 0.969,
+    "f1": 0.389,
+    "balanced_acc": 0.618,
+    "accuracy": 0.806
+  },
+  "test_metrics_high_sensitivity": {
+    "roc_auc": 0.72,
+    "pr_auc": 0.486,
+    "recall": 0.797,
+    "precision": 0.317,
+    "specificity": 0.479,
+    "f1": 0.453,
+    "balanced_acc": 0.638,
+    "accuracy": 0.553
+  },
+  "top_features": [
+    {
+      "feature": "ZSN_A",
+      "name": "Prior chronic heart failure",
+      "importance": 0.1107
+    },
+    {
+      "feature": "AGE",
+      "name": "Age",
+      "importance": 0.0472
+    },
+    {
+      "feature": "lat_im",
+      "name": "Lateral MI (ECG)",
+      "importance": 0.0224
+    },
+    {
+      "feature": "ant_im",
+      "name": "Anterior MI (ECG)",
+      "importance": 0.0102
+    },
+    {
+      "feature": "endocr_01",
+      "name": "Diabetes mellitus",
+      "importance": 0.0065
+    },
+    {
+      "feature": "ALT_BLOOD",
+      "name": "Serum ALT",
+      "importance": 0.0061
+    },
+    {
+      "feature": "NA_BLOOD",
+      "name": "Serum sodium",
+      "importance": 0.006
+    },
+    {
+      "feature": "D_AD_KBRIG",
+      "name": "Diastolic BP (ambulance)",
+      "importance": 0.006
+    },
+    {
+      "feature": "zab_leg_01",
+      "name": "Chronic bronchitis",
+      "importance": 0.0053
+    },
+    {
+      "feature": "LID_S_n",
+      "name": "Lidocaine in ICU",
+      "importance": 0.0048
+    },
+    {
+      "feature": "ANT_CA_S_n",
+      "name": "Calcium blockers in ICU",
+      "importance": 0.0039
+    },
+    {
+      "feature": "NOT_NA_KB",
+      "name": "NSAIDs given by ambulance",
+      "importance": 0.0038
+    },
+    {
+      "feature": "K_SH_POST",
+      "name": "Cardiogenic shock at ICU admission",
+      "importance": 0.0033
+    },
+    {
+      "feature": "inf_im",
+      "name": "Inferior MI (ECG)",
+      "importance": 0.0032
+    },
+    {
+      "feature": "K_BLOOD",
+      "name": "Serum potassium",
+      "importance": 0.0027
+    }
+  ],
+  "imbalance_ablation": {
+    "Logistic Regression | unweighted": {
+      "roc_auc": 0.617,
+      "recall": 0.051,
+      "precision": 0.267,
+      "accuracy": 0.747
+    },
+    "Logistic Regression | weighted": {
+      "roc_auc": 0.635,
+      "recall": 0.456,
+      "precision": 0.308,
+      "accuracy": 0.635
+    },
+    "Random Forest | unweighted": {
+      "roc_auc": 0.71,
+      "recall": 0.165,
+      "precision": 0.867,
+      "accuracy": 0.8
+    },
+    "Random Forest | weighted": {
+      "roc_auc": 0.705,
+      "recall": 0.228,
+      "precision": 0.643,
+      "accuracy": 0.791
+    }
+  },
+  "all_models": [
+    {
+      "model": "Random Forest",
+      "cv_roc_auc_mean": 0.7304,
+      "cv_roc_auc_std": 0.0371,
+      "test_roc_auc": 0.7199,
+      "test_pr_auc": 0.4856,
+      "test_recall": 0.2658,
+      "test_precision": 0.7241,
+      "test_specificity": 0.9693,
+      "test_f1": 0.3889,
+      "test_balanced_acc": 0.6176,
+      "test_accuracy": 0.8059,
+      "best_params": "{'max_features': 0.3, 'min_samples_leaf': 3}"
+    },
+    {
+      "model": "Gradient Boosting",
+      "cv_roc_auc_mean": 0.7117,
+      "cv_roc_auc_std": 0.0218,
+      "test_roc_auc": 0.725,
+      "test_pr_auc": 0.5354,
+      "test_recall": 0.481,
+      "test_precision": 0.4368,
+      "test_specificity": 0.8123,
+      "test_f1": 0.4578,
+      "test_balanced_acc": 0.6466,
+      "test_accuracy": 0.7353,
+      "best_params": "{'learning_rate': 0.03, 'max_leaf_nodes': 7}"
+    },
+    {
+      "model": "SVM (RBF kernel)",
+      "cv_roc_auc_mean": 0.6785,
+      "cv_roc_auc_std": 0.0353,
+      "test_roc_auc": 0.6648,
+      "test_pr_auc": 0.3547,
+      "test_recall": 0.0253,
+      "test_precision": 0.3333,
+      "test_specificity": 0.9847,
+      "test_f1": 0.0471,
+      "test_balanced_acc": 0.505,
+      "test_accuracy": 0.7618,
+      "best_params": "{'C': 3.0, 'gamma': 0.003}"
+    },
+    {
+      "model": "Logistic Regression",
+      "cv_roc_auc_mean": 0.6699,
+      "cv_roc_auc_std": 0.0423,
+      "test_roc_auc": 0.6525,
+      "test_pr_auc": 0.3243,
+      "test_recall": 0.4937,
+      "test_precision": 0.3333,
+      "test_specificity": 0.7011,
+      "test_f1": 0.398,
+      "test_balanced_acc": 0.5974,
+      "test_accuracy": 0.6529,
+      "best_params": "{'C': 0.01}"
+    },
+    {
+      "model": "k-Nearest Neighbours",
+      "cv_roc_auc_mean": 0.6187,
+      "cv_roc_auc_std": 0.0369,
+      "test_roc_auc": 0.5661,
+      "test_pr_auc": 0.2612,
+      "test_recall": 0.0,
+      "test_precision": 0.0,
+      "test_specificity": 1.0,
+      "test_f1": 0.0,
+      "test_balanced_acc": 0.5,
+      "test_accuracy": 0.7676,
+      "best_params": "{'n_neighbors': 51}"
+    }
+  ]
+}

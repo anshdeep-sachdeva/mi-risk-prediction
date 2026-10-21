@@ -1,0 +1,13 @@
+outcome,code,positives,Logistic Regression,Gradient Boosting
+Supraventricular tachycardia,PREDS_TAH,20,0.568,0.378
+Relapse of MI,REC_IM,159,0.612,0.59
+Dressler syndrome,DRESSLER,75,0.631,0.632
+Third-degree AV block,A_V_BLOK,57,0.72,0.633
+Atrial fibrillation,FIBR_PREDS,170,0.708,0.679
+Post-infarction angina,P_IM_STEN,148,0.678,0.683
+Ventricular tachycardia,JELUD_TAH,42,0.677,0.711
+Chronic heart failure,ZSN,394,0.651,0.714
+Pulmonary edema,OTEK_LANC,159,0.717,0.717
+Ventricular fibrillation,FIBR_JELUD,71,0.744,0.74
+Myocardial rupture,RAZRIV,54,0.78,0.759
+Death (any cause),LET_IS,271,0.878,0.89

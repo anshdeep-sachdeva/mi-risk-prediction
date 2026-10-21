@@ -1,0 +1,18 @@
+{
+  "patients": 1700,
+  "input_features": 111,
+  "overall_missing_pct": 8.5,
+  "deaths": 271,
+  "death_rate_pct": 15.9,
+  "death_rate_by_group_pct": {
+    "Age < 60": 7.7,
+    "Age 60-70": 19.2,
+    "Age > 70": 24.9,
+    "No shock": 13.7,
+    "Cardiogenic shock": 93.5,
+    "No prior HF": 12.0,
+    "Prior HF": 25.3,
+    "No pulm. edema": 14.4,
+    "Pulmonary edema": 39.1
+  }
+}

@@ -1,0 +1,6 @@
+model,paper_accuracy,paper_roc_auc,paper_precision,paper_recall,paper_f1,ours_accuracy,ours_roc_auc,ours_precision,ours_recall,ours_f1
+Logistic Regression,0.87,0.86,0.84,0.94,0.89,0.852,0.908,0.816,0.939,0.873
+Gradient Boosting,0.84,0.83,0.81,0.91,0.86,0.787,0.88,0.763,0.879,0.817
+Bagging,0.8,0.8,0.78,0.88,0.83,0.82,0.859,0.775,0.939,0.849
+Random Forest,0.79,0.78,0.78,0.85,0.81,0.77,0.903,0.744,0.879,0.806
+SVM (RBF kernel),0.46,0.5,0.0,0.0,0.0,0.836,0.91,0.795,0.939,0.861

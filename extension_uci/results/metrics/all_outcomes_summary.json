@@ -1,0 +1,86 @@
+[
+  {
+    "outcome": "Atrial fibrillation",
+    "code": "FIBR_PREDS",
+    "positives": 170,
+    "Logistic Regression": 0.708,
+    "Gradient Boosting": 0.679
+  },
+  {
+    "outcome": "Supraventricular tachycardia",
+    "code": "PREDS_TAH",
+    "positives": 20,
+    "Logistic Regression": 0.568,
+    "Gradient Boosting": 0.378
+  },
+  {
+    "outcome": "Ventricular tachycardia",
+    "code": "JELUD_TAH",
+    "positives": 42,
+    "Logistic Regression": 0.677,
+    "Gradient Boosting": 0.711
+  },
+  {
+    "outcome": "Ventricular fibrillation",
+    "code": "FIBR_JELUD",
+    "positives": 71,
+    "Logistic Regression": 0.744,
+    "Gradient Boosting": 0.74
+  },
+  {
+    "outcome": "Third-degree AV block",
+    "code": "A_V_BLOK",
+    "positives": 57,
+    "Logistic Regression": 0.72,
+    "Gradient Boosting": 0.633
+  },
+  {
+    "outcome": "Pulmonary edema",
+    "code": "OTEK_LANC",
+    "positives": 159,
+    "Logistic Regression": 0.717,
+    "Gradient Boosting": 0.717
+  },
+  {
+    "outcome": "Myocardial rupture",
+    "code": "RAZRIV",
+    "positives": 54,
+    "Logistic Regression": 0.78,
+    "Gradient Boosting": 0.759
+  },
+  {
+    "outcome": "Dressler syndrome",
+    "code": "DRESSLER",
+    "positives": 75,
+    "Logistic Regression": 0.631,
+    "Gradient Boosting": 0.632
+  },
+  {
+    "outcome": "Chronic heart failure",
+    "code": "ZSN",
+    "positives": 394,
+    "Logistic Regression": 0.651,
+    "Gradient Boosting": 0.714
+  },
+  {
+    "outcome": "Relapse of MI",
+    "code": "REC_IM",
+    "positives": 159,
+    "Logistic Regression": 0.612,
+    "Gradient Boosting": 0.59
+  },
+  {
+    "outcome": "Post-infarction angina",
+    "code": "P_IM_STEN",
+    "positives": 148,
+    "Logistic Regression": 0.678,
+    "Gradient Boosting": 0.683
+  },
+  {
+    "outcome": "Death (any cause)",
+    "code": "LET_IS",
+    "positives": 271,
+    "Logistic Regression": 0.878,
+    "Gradient Boosting": 0.89
+  }
+]

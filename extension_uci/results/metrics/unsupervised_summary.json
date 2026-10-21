@@ -1,0 +1,67 @@
+{
+  "pca_components_for_90pct_variance": 80,
+  "pca_variance_first_2_pct": 7.0,
+  "pca_variance_first_10_pct": 24.0,
+  "silhouette_by_k": {
+    "2": 0.351,
+    "3": 0.151,
+    "4": 0.121,
+    "5": 0.138,
+    "6": 0.141,
+    "7": 0.138,
+    "8": 0.128
+  },
+  "k_selected": 3,
+  "kmeans_vs_agglomerative_ARI": 0.199,
+  "cluster_vs_death_chi2_p": 1.675077280247894e-11,
+  "cluster_profiles": {
+    "1": {
+      "patients": 1141,
+      "mean_age": 60.5,
+      "male_pct": 65.6,
+      "prior_MI_pct": 33.5,
+      "prior_HF_pct": 8.4,
+      "diabetes_pct": 12.7,
+      "shock_pct": 0.4,
+      "mean_ICU_systolic_BP": 138.0,
+      "death_rate_pct": 12.2,
+      "heart_failure_pct": 23.4
+    },
+    "2": {
+      "patients": 454,
+      "mean_age": 63.7,
+      "male_pct": 58.8,
+      "prior_MI_pct": 48.0,
+      "prior_HF_pct": 12.6,
+      "diabetes_pct": 15.0,
+      "shock_pct": 7.6,
+      "mean_ICU_systolic_BP": 129.0,
+      "death_rate_pct": 20.9,
+      "heart_failure_pct": 18.9
+    },
+    "3": {
+      "patients": 105,
+      "mean_age": 68.4,
+      "male_pct": 47.6,
+      "prior_MI_pct": 34.3,
+      "prior_HF_pct": 23.8,
+      "diabetes_pct": 15.4,
+      "shock_pct": 6.7,
+      "mean_ICU_systolic_BP": 128.0,
+      "death_rate_pct": 35.2,
+      "heart_failure_pct": 39.0
+    }
+  },
+  "cluster_feature_experiment": {
+    "without_cluster_feature": {
+      "cv_auc_mean": 0.8796,
+      "cv_auc_std": 0.0124,
+      "test_auc": 0.8519
+    },
+    "with_cluster_feature": {
+      "cv_auc_mean": 0.8787,
+      "cv_auc_std": 0.0121,
+      "test_auc": 0.8514
+    }
+  }
+}

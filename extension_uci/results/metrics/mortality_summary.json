@@ -1,0 +1,211 @@
+{
+  "target": "LET_IS",
+  "task": "mortality",
+  "n_features": 100,
+  "n_train": 1360,
+  "n_test": 340,
+  "positive_rate_pct": 15.9,
+  "majority_baseline_accuracy": 0.841,
+  "best_model": "Gradient Boosting",
+  "best_params": {
+    "learning_rate": 0.03,
+    "max_leaf_nodes": 7
+  },
+  "threshold_default": 0.5,
+  "threshold_high_sensitivity": 0.3832,
+  "test_metrics_default": {
+    "roc_auc": 0.882,
+    "pr_auc": 0.677,
+    "recall": 0.667,
+    "precision": 0.45,
+    "specificity": 0.846,
+    "f1": 0.537,
+    "balanced_acc": 0.756,
+    "accuracy": 0.818
+  },
+  "test_metrics_high_sensitivity": {
+    "roc_auc": 0.882,
+    "pr_auc": 0.677,
+    "recall": 0.833,
+    "precision": 0.417,
+    "specificity": 0.78,
+    "f1": 0.556,
+    "balanced_acc": 0.807,
+    "accuracy": 0.788
+  },
+  "top_features": [
+    {
+      "feature": "S_AD_ORIT",
+      "name": "Systolic BP (ICU)",
+      "importance": 0.0453
+    },
+    {
+      "feature": "TIME_B_S",
+      "name": "Time from pain onset to hospital",
+      "importance": 0.0251
+    },
+    {
+      "feature": "AGE",
+      "name": "Age",
+      "importance": 0.0219
+    },
+    {
+      "feature": "ant_im",
+      "name": "Anterior MI (ECG)",
+      "importance": 0.0203
+    },
+    {
+      "feature": "IBS_POST",
+      "name": "Recent coronary heart disease",
+      "importance": 0.0186
+    },
+    {
+      "feature": "NITR_S",
+      "name": "Liquid nitrates in ICU",
+      "importance": 0.017
+    },
+    {
+      "feature": "NA_KB",
+      "name": "Opioids given by ambulance",
+      "importance": 0.0137
+    },
+    {
+      "feature": "L_BLOOD",
+      "name": "White blood cell count",
+      "importance": 0.0123
+    },
+    {
+      "feature": "ROE",
+      "name": "ESR",
+      "importance": 0.0097
+    },
+    {
+      "feature": "n_p_ecg_p_12",
+      "name": "Complete RBBB on ECG",
+      "importance": 0.0081
+    },
+    {
+      "feature": "ASP_S_n",
+      "name": "Aspirin in ICU",
+      "importance": 0.0079
+    },
+    {
+      "feature": "NOT_NA_KB",
+      "name": "NSAIDs given by ambulance",
+      "importance": 0.0034
+    },
+    {
+      "feature": "NA_BLOOD",
+      "name": "Serum sodium",
+      "importance": 0.0025
+    },
+    {
+      "feature": "S_AD_KBRIG",
+      "name": "Systolic BP (ambulance)",
+      "importance": 0.0016
+    },
+    {
+      "feature": "ritm_ecg_p_01",
+      "name": "Sinus rhythm on ECG",
+      "importance": 0.0014
+    }
+  ],
+  "imbalance_ablation": {
+    "Logistic Regression | unweighted": {
+      "roc_auc": 0.844,
+      "recall": 0.426,
+      "precision": 0.548,
+      "accuracy": 0.853
+    },
+    "Logistic Regression | weighted": {
+      "roc_auc": 0.843,
+      "recall": 0.722,
+      "precision": 0.433,
+      "accuracy": 0.806
+    },
+    "Random Forest | unweighted": {
+      "roc_auc": 0.884,
+      "recall": 0.222,
+      "precision": 1.0,
+      "accuracy": 0.876
+    },
+    "Random Forest | weighted": {
+      "roc_auc": 0.896,
+      "recall": 0.426,
+      "precision": 0.852,
+      "accuracy": 0.897
+    }
+  },
+  "all_models": [
+    {
+      "model": "Gradient Boosting",
+      "cv_roc_auc_mean": 0.8992,
+      "cv_roc_auc_std": 0.0103,
+      "test_roc_auc": 0.882,
+      "test_pr_auc": 0.6769,
+      "test_recall": 0.6667,
+      "test_precision": 0.45,
+      "test_specificity": 0.8462,
+      "test_f1": 0.5373,
+      "test_balanced_acc": 0.7564,
+      "test_accuracy": 0.8176,
+      "best_params": "{'learning_rate': 0.03, 'max_leaf_nodes': 7}"
+    },
+    {
+      "model": "Random Forest",
+      "cv_roc_auc_mean": 0.8971,
+      "cv_roc_auc_std": 0.0089,
+      "test_roc_auc": 0.8804,
+      "test_pr_auc": 0.6839,
+      "test_recall": 0.2037,
+      "test_precision": 1.0,
+      "test_specificity": 1.0,
+      "test_f1": 0.3385,
+      "test_balanced_acc": 0.6019,
+      "test_accuracy": 0.8735,
+      "best_params": "{'max_features': 'sqrt', 'min_samples_leaf': 1}"
+    },
+    {
+      "model": "Logistic Regression",
+      "cv_roc_auc_mean": 0.8829,
+      "cv_roc_auc_std": 0.0133,
+      "test_roc_auc": 0.8583,
+      "test_pr_auc": 0.5929,
+      "test_recall": 0.7222,
+      "test_precision": 0.4382,
+      "test_specificity": 0.8252,
+      "test_f1": 0.5455,
+      "test_balanced_acc": 0.7737,
+      "test_accuracy": 0.8088,
+      "best_params": "{'C': 0.01}"
+    },
+    {
+      "model": "SVM (RBF kernel)",
+      "cv_roc_auc_mean": 0.8808,
+      "cv_roc_auc_std": 0.0178,
+      "test_roc_auc": 0.8738,
+      "test_pr_auc": 0.5389,
+      "test_recall": 0.4444,
+      "test_precision": 0.5581,
+      "test_specificity": 0.9336,
+      "test_f1": 0.4948,
+      "test_balanced_acc": 0.689,
+      "test_accuracy": 0.8559,
+      "best_params": "{'C': 0.3, 'gamma': 0.003}"
+    },
+    {
+      "model": "k-Nearest Neighbours",
+      "cv_roc_auc_mean": 0.8379,
+      "cv_roc_auc_std": 0.0245,
+      "test_roc_auc": 0.8277,
+      "test_pr_auc": 0.5393,
+      "test_recall": 0.037,
+      "test_precision": 1.0,
+      "test_specificity": 1.0,
+      "test_f1": 0.0714,
+      "test_balanced_acc": 0.5185,
+      "test_accuracy": 0.8471,
+      "best_params": "{'n_neighbors': 51}"
+    }
+  ]
+}
